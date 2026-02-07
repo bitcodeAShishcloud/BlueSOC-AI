@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Offline SOC Dashboard</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="5">
+    <style>
+        body { font-family: Arial; background:#0f172a; color:#e5e7eb; padding:20px; }
+        .card { background:#020617; padding:20px; border-radius:10px; }
+        .score { font-size:40px; }
+    </style>
+</head>
+<body>
+
+<h1>🛡️ Offline SOC Dashboard</h1>
+
+<div class="card">
+    <div id="content">Loading...</div>
+</div>
+
+<script>
+fetch("data.json")
+.then(res => res.json())
+.then(d => {
+    document.getElementById("content").innerHTML = `
+        <p><b>Time:</b> ${d.time}</p>
+        <p class="score"><b>Severity Score:</b> ${d.severity_score}/10</p>
+        <pre>${d.analysis}</pre>
+    `;
+});
+</script>
+
+</body>
+</html>
