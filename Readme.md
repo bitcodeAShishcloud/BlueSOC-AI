@@ -3,6 +3,7 @@
 
 **( work is ongoing/almost done 👍)**
 
+
 An **offline, local SOC (Security Operations Center) analysis assistant** powered by a **Mini-LLM (Qwen-3-7B-Instruct GGUF)**.  
 This project is designed for **SOC Analysts (L1/L2)** to analyze security logs, detect threats, assign severity scores, and recommend mitigation actions — **without internet dependency**.
 
