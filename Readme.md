@@ -1,7 +1,7 @@
 # 🛡️ Mini-LLM Powered SOC Assistant (Offline / Local) 
 
 
-#**( work is ongoing/almost done 👍)**
+# **( work is ongoing/almost done 👍)**
 
 
 
