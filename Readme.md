@@ -50,7 +50,7 @@ All analysis is performed **locally using the LLM**, making it suitable for **ai
 
 ## 🧩 Architecture Overview
 
-mermaid
+```mermaid
 flowchart TD
     A["📄 Logs/Events"] --> B["⚙️ Pre-Processing"]
     B --> C["🤖 Qwen-3-7B<br/>(GGUF Local)"]
@@ -65,7 +65,7 @@ flowchart TD
     
     style D fill:#4CAF50,color:#fff
     style Outputs fill:#f9f9f9,stroke:#ddd
-
+```
 ---
 
 ## 🖥️ UI Features
