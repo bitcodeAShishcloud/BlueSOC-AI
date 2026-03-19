@@ -51,10 +51,7 @@ All analysis is performed **locally using the LLM**, making it suitable for **ai
 ## 🧩 Architecture Overview
 
 
-Logs / Events 
-↓ Pre-Processing & Prompting 
-↓ Qwen-3-7B-Instruct (GGUF, Local) 
-↓ SOC Analysis Output 
+Logs / Events ↓ Pre-Processing & Prompting ↓ Qwen-3-7B-Instruct (GGUF, Local) ↓ SOC Analysis Output 
 ├─ Severity Score 
 ├─ Threat Summary 
 ├─ Reasoning └─ Recommended Actions
