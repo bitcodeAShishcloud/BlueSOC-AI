@@ -50,18 +50,21 @@ All analysis is performed **locally using the LLM**, making it suitable for **ai
 
 ## 🧩 Architecture Overview
 
-
 ```mermaid
 flowchart TD
-    A[📄 Logs/Events] --> B[⚙️ Pre-Processing]
-    B --> C[🤖 Qwen-3-7B<br/>GGUF Local]
-    C --> D[🔍 SOC Output]
-    D --> E1[📈 Score]
-    D --> E2[⚠️ Threat]
-    D --> E3[💭 Reasoning]
-    D --> E4[✅ Actions]
+    A["📄 Logs/Events"] --> B["⚙️ Pre-Processing"]
+    B --> C["🤖 Qwen-3-7B<br/>(GGUF Local)"]
+    C --> D["🔍 SOC Analysis"]
     
-    style D fill:#4CAF50,color:white
+    subgraph Outputs[" "]
+        D --> E1["📊 Score"]
+        D --> E2["⚠️ Threat"]
+        D --> E3["💭 Reasoning"]
+        D --> E4["✅ Actions"]
+    end
+    
+    style D fill:#4CAF50,color:#fff
+    style Outputs fill:#f9f9f9,stroke:#ddd
 ```
 ---
 
